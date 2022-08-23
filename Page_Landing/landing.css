@@ -361,7 +361,7 @@ header nav h1:hover a {
   line-height: 80px;
   color: #fff;
   font-weight: 600;
-  font-family: 'Volkhov', serif;
+  font-family: "Volkhov", serif;
 }
 .quality_right .quality_img_info p {
   color: #fff;
@@ -371,13 +371,13 @@ header nav h1:hover a {
 }
 /*end quality*/
 
-/*start quality_under*/ 
+/*start quality_under*/
 .quality_under .row {
   display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-} 
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .quality_under .quality_under_item {
   margin-top: 30px;
 }
@@ -429,4 +429,188 @@ header nav h1:hover a {
   right: 0;
   z-index: -1;
 }
+.owl-nav {
+  display: none;
+}
+.client_content .container .owl-carousel {
+  max-width: 900px;
+  margin: auto;
+}
+.client_content .container .owl-carousel .client_item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.client_content .container .owl-carousel .client_item .client_left {
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.client_content .container .owl-carousel .client_item .client_left a {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  overflow: hidden;
+  background: white;
+  border-radius: 50%;
+}
+.client_content .container .owl-carousel .client_item .client_left a {
+  max-width: 100%;
+}
+.client_content
+  .container
+  .owl-carousel
+  .client_item
+  .client_left
+  .client_title
+  h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px 0 5px;
+  line-height: 28px;
+}
+.client_content
+  .container
+  .owl-carousel
+  .client_item
+  .client_left
+  .client_title
+  p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 27px;
+}
+.client_content .container .owl-carousel .client_item .client_right span {
+  font-size: 25px;
+  color: #fb811e;
+  font-weight: 600;
+  display: inline-block;
+}
+.client_content .container .owl-carousel .client_item .client_right p {
+  margin: 0 0 1rem;
+  font-size: 22px;
+  line-height: 34px;
+  color: #fff;
+  text-indent: 30px;
+  display: block;
+}
+.owl-theme .owl-dots {
+  margin-top: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: -90px;
+  text-align: center;
+  background: none;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: #fff;
+  opacity: 0.3;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #fb811e;
+  opacity: 1;
+}
 /*end client*/
+
+/* start footer */
+footer {
+  color: #807779;
+}
+footer h3 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+}
+
+.footer__contact .mt-3 a {
+  color: #807779;
+  text-decoration: none;
+}
+
+.footer__contact .mt-3 a:hover {
+  color: #fb811e;
+}
+
+.footer__logo .logo {
+  text-decoration: none;
+  font-size: 32px;
+  position: relative;
+  color: #fb811e;
+  transition: 0.5s;
+}
+
+.footer__logo .logo i {
+  position: absolute;
+  top: -3px;
+  left: 54px;
+  font-size: 20px;
+}
+
+.footer__logo .logo:hover {
+  color: black;
+}
+
+.copy__rights a {
+  color: #009f4d;
+  text-decoration: none;
+}
+
+.copy__rights a:hover {
+  color: #fb811e;
+}
+
+.subscribe__input input {
+  background: #f4f4f4;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  width: 80%;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.subscribe__input button {
+  background: #009f4d;
+  border: none;
+  font-size: 16px;
+  padding: 12px 12px;
+  cursor: pointer;
+  width: 20%;
+  color: #fff;
+  border-radius: 0px 30px 30px 0px;
+  transition: 0.5s;
+}
+
+.subscribe__input button:hover {
+  background: #33b271;
+}
+
+.footer__social li {
+  display: inline;
+  list-style: none;
+}
+
+.footer__social li {
+  margin-right: 5px;
+}
+
+.footer__social li a i {
+  width: 35px;
+  height: 35px;
+  background: rgb(10 191 83 / 8%);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  color: #009f4d;
+  transition: 0.5s;
+}
+
+.footer__social li a i:hover {
+  background-color: #fff5dc;
+  color: #fb811e;
+  box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
+/* end footer */
