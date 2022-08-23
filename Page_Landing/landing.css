@@ -370,3 +370,63 @@ header nav h1:hover a {
   letter-spacing: 0.2px;
 }
 /*end quality*/
+
+/*start quality_under*/ 
+.quality_under .row {
+  display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+} 
+.quality_under .quality_under_item {
+  margin-top: 30px;
+}
+.quality_under .quality_under_item .item_content {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 2rem 1rem;
+  background: #fafafa;
+  transition: 0.3s ease-in;
+  text-decoration: none !important;
+}
+.quality_under .quality_under_item .item_content .col-3 {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.quality_under .quality_under_item .quality_under_icon img {
+  vertical-align: middle;
+  border-style: none;
+  height: 50%;
+}
+.quality_under .quality_under_item .quality_under_detail h4 {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 600;
+  color: black;
+}
+.quality_under .quality_under_item .quality_under_detail p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #707070;
+  margin-top: 10px;
+}
+/*end quality_under*/
+
+/*start client*/
+.client {
+  background: url(/img/bg1.jpg);
+  position: relative;
+  z-index: 1;
+}
+.client:before {
+  content: "";
+  background: rgb(10 10 10 / 52%);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+/*end client*/
