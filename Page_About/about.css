@@ -90,7 +90,7 @@ header nav h1:hover a {
   color: #707070;
   font-weight: 700;
 }
-.inner-banner .home h4{
+.inner-banner .home h4 {
   font-weight: 700;
 }
 
@@ -279,16 +279,7 @@ h4.title-bg-content {
   /* -webkit-animation: ripple 1s linear infinite; */
   animation: ripple 1s linear infinite;
 }
-@keyframes {
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: ripple;
-}
+
 .video span.video-play i {
   color: #fb811e;
 }
