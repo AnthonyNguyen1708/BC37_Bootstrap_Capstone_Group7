@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html,
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    scroll-behavior: smooth;
+}
+  
+html,
+body h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Volkhov", serif;
+}
+  
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+header nav h1 a {
+    text-decoration: none;
+    position: relative;
+    font-size: 32px;
+    color: #fb811e;
+    transition: 0.5s;
+}
+header nav h1 a i {
+    position: absolute;
+    top: -10%;
+    left: 55px;
+    font-size: 20px;
+}
+header nav h1:hover a {
+    color: black;
+}
+.header_navbar .fa-search {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.header_navbar .fa-moon {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    line-height: 40px;
+    cursor: pointer;
+    color: white;
+    margin-right: 65px;
+}
+.header_navbar .fa-moon:hover {
+    color: #fb811e;
+}
+.header_menu {
+    line-height: 40px;
+    margin: 0 -80px;
+}
+.header_menu a {
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 600;
+    color: white;
+}
+.header_menu .services {
+    color: #fb811e;
+}
+.header_menu a:hover {
+    color: #fb811e;
+}
+
+.inner-banner {
+  background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/inner-banner.png);
+}
+.inner-banner .services .services__btn a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+}
+.inner-banner .services h4{
+  font-weight: 700;
+}
+
+/* services */
+.services .services__item i {
+  font-size: 45px;
+  color: #fb811e;
+}
+.services .services__item a{
+  margin-top: 25px;
+  display: block;
+  color: black;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 22px;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+.services .services__item p{
+  color: #707070;
+}
+.services .services__item{
+  padding: 50px 35px;
+  position: relative;
+  z-index: 1;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
+}
+.services .services__item:hover {
+  transition: .3s;
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+.services .services__item .hover{
+  margin-top: 25px;
+  display: block;
+  color: black;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 22px;
+  letter-spacing: 0;
+  transform: translate(all, 0.2s);
+}
+.services .services__item .hover:hover{
+  color: #fb811e;
+}
+/* features */
+.features .features__left img {
+  border-radius: 30px;
+}
+.features .features__right h5{
+  color: #fb811e;
+  font-size: 20px;
+}
+.features .features__right h3{
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  color: black;
+}
+.features .features__right p{
+  color: #707070;
+}
+.features .features__right i{
+  font-size: 30px;
+  color: #fb811e;
+}
+
+.features .features__right h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+/* number */
+.number .icon i {
+  color: #009f4d;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  background: rgb(0 159 77 / 4%);
+  font-size: 32px;
+}
+.number .icon h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+}
+.number .icon p {
+  text-transform: uppercase;
+  color: black;
+  font-size: 17px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* theme */
+.theme {
+  background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg2.jpg) ;
+}
+.theme .theme__detail h3{
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.theme .theme__btn {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration:none ;
+  padding: 12px 30px;
+  font-weight: 600;
+  background: #fb811e;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  transition: all .25s ease-in-out;
+}
+.theme .theme__btn:hover{
+  background: #009f4d;
+  color: #ffffff;
+}
+/* start footer */
+footer {
+  color: #807779;
+}
+footer h3 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+}
+
+.footer__contact .mt-3 a {
+  color: #807779;
+  text-decoration: none;
+}
+
+.footer__contact .mt-3 a:hover {
+  color: #fb811e;
+}
+
+.footer__logo .logo {
+  text-decoration: none;
+  font-size: 32px;
+  position: relative;
+  color: #fb811e;
+  transition: 0.5s;
+}
+
+.footer__logo .logo i {
+  position: absolute;
+  top: -3px;
+  left: 54px;
+  font-size: 20px;
+}
+
+.footer__logo .logo:hover {
+  color: black;
+}
+
+.copy__rights a {
+  color: #009f4d;
+  text-decoration: none;
+}
+
+.copy__rights a:hover {
+  color: #fb811e;
+}
+
+.subscribe__input input {
+  background: #f4f4f4;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  width: 80%;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.subscribe__input button {
+  background: #009f4d;
+  border: none;
+  font-size: 16px;
+  padding: 12px 12px;
+  cursor: pointer;
+  width: 20%;
+  color: #fff;
+  border-radius: 0px 30px 30px 0px;
+  transition: 0.5s;
+}
+
+.subscribe__input button:hover {
+  background: #33b271;
+}
+
+.footer__social li {
+  display: inline;
+  list-style: none;
+}
+
+.footer__social li {
+  margin-right: 5px;
+}
+
+.footer__social li a i {
+  width: 35px;
+  height: 35px;
+  background: rgb(10 191 83 / 8%);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  color: #009f4d;
+  transition: 0.5s;
+}
+
+.footer__social li a i:hover {
+  background-color: #fff5dc;
+  color: #fb811e;
+  box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
+/* end footer */
