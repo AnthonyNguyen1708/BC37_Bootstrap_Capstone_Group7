@@ -1,84 +1,84 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
-    font-family: "Source Sans Pro", sans-serif;
-    scroll-behavior: smooth;
+  font-family: "Source Sans Pro", sans-serif;
+  scroll-behavior: smooth;
 }
-  
+
 html,
 body h1,
 h2,
 h3,
 h4,
 h5 {
-    font-family: "Volkhov", serif;
+  font-family: "Volkhov", serif;
 }
-  
+
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 header nav h1 a {
-    text-decoration: none;
-    position: relative;
-    font-size: 32px;
-    color: #fb811e;
-    transition: 0.5s;
+  text-decoration: none;
+  position: relative;
+  font-size: 32px;
+  color: #fb811e;
+  transition: 0.5s;
 }
 header nav h1 a i {
-    position: absolute;
-    top: -10%;
-    left: 55px;
-    font-size: 20px;
+  position: absolute;
+  top: -10%;
+  left: 55px;
+  font-size: 20px;
 }
 header nav h1:hover a {
-    color: black;
+  color: black;
 }
 .header_navbar .fa-search {
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-    line-height: 35px;
-    border-radius: 50%;
-    margin-right: 3px;
-    cursor: pointer;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  line-height: 35px;
+  border-radius: 50%;
+  margin-right: 3px;
+  cursor: pointer;
 }
 .header_navbar .fa-moon {
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
-    line-height: 40px;
-    cursor: pointer;
-    color: white;
-    margin-right: 65px;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  line-height: 40px;
+  cursor: pointer;
+  color: white;
+  margin-right: 90px;
 }
 .header_navbar .fa-moon:hover {
-    color: #fb811e;
+  color: #fb811e;
 }
 .header_menu {
-    line-height: 40px;
-    margin: 0 -80px;
+  line-height: 40px;
+  margin: 0 -100px;
 }
 .header_menu a {
-    font-size: 18px;
-    text-decoration: none;
-    margin-right: 10px;
-    font-weight: 600;
-    color: white;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: 600;
+  color: white;
 }
 .header_menu .services {
-    color: #fb811e;
+  color: #fb811e;
 }
 .header_menu a:hover {
-    color: #fb811e;
+  color: #fb811e;
 }
 
 .inner-banner {
@@ -89,7 +89,7 @@ header nav h1:hover a {
   color: #707070;
   font-weight: 700;
 }
-.inner-banner .services h4{
+.inner-banner .services h4 {
   font-weight: 700;
 }
 
@@ -98,7 +98,7 @@ header nav h1:hover a {
   font-size: 45px;
   color: #fb811e;
 }
-.services .services__item a{
+.services .services__item a {
   margin-top: 25px;
   display: block;
   color: black;
@@ -109,10 +109,10 @@ header nav h1:hover a {
   letter-spacing: 0;
   text-decoration: none;
 }
-.services .services__item p{
+.services .services__item p {
   color: #707070;
 }
-.services .services__item{
+.services .services__item {
   padding: 50px 35px;
   position: relative;
   z-index: 1;
@@ -121,10 +121,10 @@ header nav h1:hover a {
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
 }
 .services .services__item:hover {
-  transition: .3s;
+  transition: 0.3s;
   box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
 }
-.services .services__item .hover{
+.services .services__item .hover {
   margin-top: 25px;
   display: block;
   color: black;
@@ -135,27 +135,27 @@ header nav h1:hover a {
   letter-spacing: 0;
   transform: translate(all, 0.2s);
 }
-.services .services__item .hover:hover{
+.services .services__item .hover:hover {
   color: #fb811e;
 }
 /* features */
 .features .features__left img {
   border-radius: 30px;
 }
-.features .features__right h5{
+.features .features__right h5 {
   color: #fb811e;
   font-size: 20px;
 }
-.features .features__right h3{
+.features .features__right h3 {
   font-size: 40px;
   line-height: 50px;
   font-weight: 600;
   color: black;
 }
-.features .features__right p{
+.features .features__right p {
   color: #707070;
 }
-.features .features__right i{
+.features .features__right i {
   font-size: 30px;
   color: #fb811e;
 }
@@ -189,9 +189,9 @@ header nav h1:hover a {
 }
 /* theme */
 .theme {
-  background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg2.jpg) ;
+  background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg2.jpg);
 }
-.theme .theme__detail h3{
+.theme .theme__detail h3 {
   font-size: 40px;
   line-height: 50px;
   font-weight: 600;
@@ -201,20 +201,20 @@ header nav h1:hover a {
   font-size: 16px;
   line-height: 26px;
   text-transform: uppercase;
-  text-decoration:none ;
+  text-decoration: none;
   padding: 12px 30px;
   font-weight: 600;
   background: #fb811e;
   border: none;
   color: #fff;
   border-radius: 30px;
-  transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
-.theme .theme__btn:hover{
+.theme .theme__btn:hover {
   background: #009f4d;
   color: #ffffff;
 }
-/* start footer */
+/* footer */
 footer {
   color: #807779;
 }
@@ -314,4 +314,3 @@ footer h3 {
   color: #fb811e;
   box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
-/* end footer */
