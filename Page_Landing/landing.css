@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html,
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -17,6 +16,30 @@ h3,
 h4,
 h5 {
   font-family: "Volkhov", serif;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.nav-fixed {
+  padding: 0px;
+  border-bottom: none;
+  z-index: 9999 !important;
+  background-color: white !important;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+  height: 70px;
+}
+.nav-fixed h1 a {
+  color: #000;
+}
+.nav-fixed nav .header_navbar i {
+  color: #000;
+}
+.nav-fixed nav .header_navbar .header_menu a {
+  color: #000;
 }
 
 /* start header */
@@ -73,8 +96,8 @@ header nav h1:hover a {
   font-weight: 600;
   color: white;
 }
-.header_menu .services {
-  color: #fb811e;
+.header_menu .landing {
+  color: #fb811e !important;
 }
 .header_menu a:hover {
   color: #fb811e;
@@ -147,10 +170,14 @@ header nav h1:hover a {
 .carousel-indicators [data-bs-target] {
   width: 0;
   height: 0;
-  padding: 7px;
-  background-color: #fb811e !important;
+  padding: 6px;
   border-radius: 50%;
   margin: 0 8px;
+  background-color: white !important;
+  opacity: 1;
+}
+.carousel-indicators .active {
+  background-color: #fb811e !important;
 }
 /*end banner*/
 
@@ -413,6 +440,84 @@ header nav h1:hover a {
 }
 /*end quality_under*/
 
+/*start galley*/
+.gallery {
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-gap: 0.5em;
+}
+.gallery .container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.gallery .container .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.gallery .gallery_content .gallery_item .gallery_layer .small_title {
+  color: #fb811e;
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.gallery .gallery_content .gallery_item .gallery_layer h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  color: black;
+}
+.gallery .gallery_content .gallery_item .gallery_layer p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #707070;
+}
+.gallery .gallery_content .gallery_item {
+  overflow: hidden;
+  padding: 0;
+}
+.gallery .gallery_content .gallery_item .gallery_layer::before {
+  z-index: 1;
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -75%;
+  display: block;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-17deg);
+}
+.gallery .gallery_content .gallery_item .gallery_layer:hover::before {
+  left: 125%;
+  transition: all 0.75s;
+}
+.gallery .gallery_content .gallery_item .gallery_layer {
+  width: 100%;
+}
+.gallery .gallery_content .gallery_item .gallery_layer .gallery_img img {
+  width: 100%;
+}
+.gallery .gallery_content .gallery_item .gallery_layer .gallery_img h5 {
+  position: absolute;
+  z-index: 0;
+  color: #fff;
+  bottom: 0;
+  font-weight: bold;
+  background: rgb(255 255 255 / 27%);
+  padding: 6px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 20px;
+}
+/*end gallery*/
+
 /*start client*/
 .client {
   background: url(/img/bg1.jpg);
@@ -512,6 +617,270 @@ header nav h1:hover a {
   opacity: 1;
 }
 /*end client*/
+
+/*start team*/
+.team {
+  background-color: #009f4d;
+}
+.team .team_header .team_header_left h5 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.team .team_header .team_header_left h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+}
+.team .team_header .team_header_left h4 {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  z-index: 0;
+  opacity: 0.14;
+  font-size: 12vw;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+.team .team_header .team_header_right p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 27px;
+}
+.team .team_content .team_item {
+  background: white;
+  padding: 1em;
+  border-radius: 8px;
+}
+.team .team_content .team_item .team_detail {
+  overflow: hidden;
+}
+.team .team_content .team_item .team_detail .team_img img {
+  max-width: 100%;
+  border-radius: 8px;
+  width: 100%;
+  vertical-align: middle;
+}
+.team .team_content .team_item .team_detail .team_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgb(8 8 8 / 54%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.team .team_content .team_item .team_detail .team_hover .des {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-55%);
+  transition: all 0.3s 0.2s;
+  padding: 0 20px;
+}
+.team .team_content .team_item .team_detail .team_hover .des h4 {
+  margin-bottom: 4px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.team .team_content .team_item .team_detail .team_hover .des h4 a {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.team .team_content .team_item .team_detail .team_hover .des p {
+  color: white;
+  font-size: 17px;
+  line-height: 27px;
+}
+.team .team_content .team_item .team_detail .team_hover .link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  transform: translateY(45%);
+  transition: all 0.3s 0.2s;
+  font-size: 35px;
+}
+.team .team_content .team_item .team_detail .team_hover .link a {
+  margin: 0 10px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+.team .team_content .team_item .team_detail:hover .team_hover {
+  opacity: 1;
+}
+.team .team_content .team_item .team_detail:hover .team_hover .des {
+  opacity: 1;
+  top: 35%;
+}
+.team .team_content .team_item .team_detail:hover .team_hover .link {
+  opacity: 1;
+  bottom: 10%;
+}
+.team .team_content .team_item .team_title h5 {
+  margin: 0;
+  padding: 0;
+}
+.team .team_content .team_item .team_title h5 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #060606;
+  font-size: 21px;
+}
+.team .team_content .team_item .team_title p {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 1px;
+  margin-bottom: 0;
+}
+/*end team*/
+
+/*start conatct*/
+.contact .contact_content {
+  max-width: 1000px;
+}
+.contact .contact_content .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.contact .contact_content .row .contact_left h5 {
+  color: #fb811e;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.contact .contact_content .row .contact_left h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+}
+.contact
+  .contact_content
+  .row
+  .contact_left
+  .contact_detail
+  .contact_item
+  .contact_icon {
+  margin-right: 1rem;
+}
+.contact
+  .contact_content
+  .row
+  .contact_left
+  .contact_detail
+  .contact_item
+  .contact_icon
+  span {
+  color: #fb811e;
+  font-size: 20px;
+  line-height: 0;
+}
+.contact
+  .contact_content
+  .row
+  .contact_left
+  .contact_detail
+  .contact_item
+  .contact_icon
+  .fa-phone::before {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.contact
+  .contact_content
+  .row
+  .contact_left
+  .contact_detail
+  .contact_item
+  .contact_address
+  h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 8px;
+  color: black;
+  font-family: "Volkhov", serif;
+}
+.contact
+  .contact_content
+  .row
+  .contact_left
+  .contact_detail
+  .contact_item
+  .contact_address
+  p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #707070;
+}
+.contact
+  .contact_content
+  .row
+  .contact_left
+  .contact_detail
+  .contact_item
+  .contact_address
+  p
+  a {
+  text-decoration: none;
+  color: #707070;
+}
+.contact
+  .contact_content
+  .row
+  .contact_left
+  .contact_detail
+  .contact_item
+  .contact_address
+  p:hover
+  a {
+  color: #fb811e;
+  transition: 0.5s;
+}
+.contact .contact_content .row .contact_right form input {
+  width: 100%;
+  background: white;
+  font-size: 15px;
+  padding: 14px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  border: 1px solid #eee;
+}
+.contact .contact_content .row .contact_right form input:focus-visible {
+  outline: none;
+  border: 1px solid #fb811e;
+}
+
+.contact .contact_content .row .contact_right form .message_input textarea {
+  height: 120px;
+  margin: 0 0 20px 0;
+  width: 100%;
+  color: black;
+  background: white;
+  font-size: 15px;
+  padding: 14px;
+  border: 1px solid #eee;
+}
+.contact
+  .contact_content
+  .row
+  .contact_right
+  form
+  .message_input
+  textarea:focus-visible {
+  outline: none;
+  border: 1px solid #fb811e;
+}
+/*end contact*/
 
 /* start footer */
 footer {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAPSTONE</title>
+    <title>HOME PAGE</title>
 
     <!-- Bootstrap 5.1-->
     <link
@@ -22,6 +22,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!--Ionicons-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/6.0.2/esm/ionicons.min.js"
+      integrity="sha512-qFRjtFs1SsmZHbyvBqGiM8idmNed7AmDUkHHhRSR6JD1sSmv7HsQtdVeQ2jVuTCzcstSIcd+l/2DlGEl58dMRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- Google fonts -->
     <link
@@ -50,149 +58,114 @@
     />
 
     <!--Main CSS-->
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="/index.css" />
   </head>
-
   <body>
-    <header class="main-header fixed-top" id="site-header">
+    <header class="py-3 fixed-top" id="site-header">
       <div class="container">
-        <nav class="navbar">
-          <a class="navbar-brand" id="logo" href="#"
-            >Farmstead
-            <i class="fa fa-leaf"></i>
-          </a>
-          <div class="d-flex">
-            <div class="form-group search-right mr-2">
-              <form
-                action="https://wp.w3layouts.com/farmstead/"
-                method="GET"
-                id="demo-2"
-              >
-                <input type="search" name="s" placeholder="Search" />
-              </form>
+        <nav class="d-flex justify-content-between">
+          <h1>
+            <a href="">
+              Farmstead
+              <i class="fa fa-leaf"></i>
+            </a>
+          </h1>
+          <div class="header_navbar d-flex">
+            <i class="fa fa-search text-center bg-white"></i>
+            <i class="far fa-moon"></i>
+            <div class="header_menu">
+              <a class="home" href="">HOME</a>
+              <a href="">ABOUT</a>
+              <a class="services" href="">SERVICES</a>
+              <a href="">BLOG POTS</a>
+              <a href="">LANDING PAGE</a>
+              <a href="">CONTACT</a>
             </div>
-            <!-- Dark Light Theme -->
-            <div class="sun_moon mr-4">
-              <button
-                class="btn d-flex"
-                id="switchButton"
-                title="Click to switch theme"
-              >
-                <i class="far fa-sun"></i>
-                <i class="far fa-moon"></i>
-              </button>
-            </div>
-            <!-- Nav Collapse  -->
-            <button
-              class="nav_collapse btn pb-4"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapseExample"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              <i class="fa fa-bars"></i>
-            </button>
           </div>
         </nav>
-        <div class="w-100 position-relative">
-          <div class="drop collapse position-absolute" id="collapseExample">
-            <div>
-              <ul>
-                <li class="current_page_item">
-                  <a aria-current="page" href="#">Home</a>
-                </li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">blog post</a></li>
-                <li><a href="#">landing page</a></li>
-                <li><a href="#">elements page</a></li>
-                <li><a href="#">404 page</a></li>
-                <li><a href="#">contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </header>
-
     <section class="banner">
       <div class="container-fluid">
         <div class="row d-flex align-items-center">
-          <div class="col-md-5">
-            <div class="left__banner">
-              <h2 class="farm_text" id="switchFarm">Farm</h2>
-              <div class="content__banner">
-                <h3 class="mb-sm-4 mb-2">
-                  Welcome to Farmstead <br />
-                  where Natural Food is born!
-                </h3>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium.
-                </p>
-                <a class="btn btn_style mt-sm-5 mt-4" href="#">LEARN MORE</a>
+          <div class="col-md-5 banner-left">
+            <div class="banner-left-content">
+              <div class="banner-content col-md-5">
+                <h2 class="farm-text">Farm</h2>
+                <div class="banner-detail">
+                  <h3 class="mb-sm-4 mb-2">
+                    Welcome to Farmstead <br />
+                    where Natural Food is born!
+                  </h3>
+                  <p class="banner-text">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium.
+                  </p>
+                  <a class="btn btn-style mt-sm-5 mt-4" href="">Learn More</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-7">
-            <div class="right__banner">
-              <!-- slide  -->
-              <div
-                id="carouselExampleIndicators"
-                class="carousel slide"
-                data-ride="carousel"
-              >
-                <ol class="carousel-indicators">
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="0"
-                    class="active"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="1"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="2"
-                  ></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./img/b1.jpg" class="d-block w-100" alt="..." />
-                    <div class="carousel-caption">
-                      <h4 class="pr-2">01/03</h4>
-                      <p>Agriculture</p>
-                    </div>
+          <div class="col-md-7 banner-right p-0 ml-auto">
+            <div
+              id="carouselExampleDark"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="/img/b1.jpg" class="d-block" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>01/03</h5>
+                    <p>Agriculture</p>
                   </div>
-                  <div class="carousel-item">
-                    <img src="./img/b8.jpg" class="d-block w-100" alt="..." />
-                    <div class="carousel-caption">
-                      <h4 class="pr-2">02/03</h4>
-                      <p>Farm Field</p>
-                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="/img/b8.jpg" class="d-block" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>02/03</h5>
+                    <p>Farm Field</p>
                   </div>
-                  <div class="carousel-item">
-                    <img src="./img/b4.jpg" class="d-block w-100" alt="..." />
-                    <div class="carousel-caption">
-                      <h4 class="pr-2">02/03</h4>
-                      <p>Organic Farm</p>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/b4.jpg" class="d-block" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>03/03</h5>
+                    <p>Organic Farm</p>
                   </div>
                 </div>
               </div>
-              <!-- slide  -->
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="grow">
+    <section class="features py-5">
       <div class="container">
-        <div class="row">
-          <div class="left__grow col-lg-6">
+        <div class="row align-items-center">
+          <div class="feature-left col-lg-6">
             <h5>Grow Naturally</h5>
             <h3>Leaders in the field</h3>
             <p>
@@ -202,72 +175,77 @@
               Suspendisse non init magnaa velit efficitur, dolor eget ex
               fermentum.
             </p>
-            <a class="btn btn_style" href="#">discover more</a>
+            <a href="" class="btn btn-style">DISCOVERY MORE</a>
           </div>
-          <div class="right__grow col-lg-6">
-            <div class="list__grow">
-              <div class="item__grow text-center">
-                <img src="./img/img4.png" class="img-fluid" alt="" />
-                <p>natural products</p>
+          <div class="feature-rigth col-lg-6">
+            <div class="feature-rigth-content d-grid">
+              <div class="feature-rigth-item grids-1 box-wrap">
+                <div class="icon">
+                  <img src="/img/img4.png" class="img-fluid" alt="" />
+                </div>
+                <h4>
+                  <a href="">Natural Products</a>
+                </h4>
               </div>
-              <div class="item__grow text-center">
-                <img src="./img/img2.png" class="img-fluid" alt="" />
-                <p>natural products</p>
+              <div class="feature-rigth-item grids-1 box-wrap">
+                <div class="icon">
+                  <img src="/img/img2.png" class="img-fluid" alt="" />
+                </div>
+                <h4>
+                  <a href="">Wheat Cultivation</a>
+                </h4>
               </div>
-              <div class="item__grow text-center">
-                <img src="./img/img1.png" class="img-fluid" alt="" />
-                <p>natural products</p>
+              <div class="feature-rigth-item grids-1 box-wrap">
+                <div class="icon">
+                  <img src="/img/img1.png" class="img-fluid" alt="" />
+                </div>
+                <h4>
+                  <a href="">Mordern Truck</a>
+                </h4>
               </div>
-              <div class="item__grow text-center">
-                <img src="./img/img3.png" class="img-fluid" alt="" />
-                <p>natural products</p>
+              <div class="feature-rigth-item grids-1 box-wrap">
+                <div class="icon">
+                  <img src="/img/img3.png" class="img-fluid" alt="" />
+                </div>
+                <h4>
+                  <a href="">Organic Products</a>
+                </h4>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="organic py-5">
-      <div class="container test py-md-5 py-4">
-        <div class="organic_title position-relative mb-sm-5 mb-4 pb-xl-4">
+    <section class="service py-5">
+      <div class="container py-md-5 py-4">
+        <div class="service_title position-relative mb-sm-5 mb-4 pb-xl-4">
           <div class="row align-items-center">
-            <div class="col-md-6 w_heading">
-              <h2 class="first_title mb-md-2 text-white">What we do</h2>
-              <h3 class="second_title text-white">
-                Why Choose Our Fresh Organic Foods
-              </h3>
+            <div class="col-md-6">
+              <h5 class="text-white mb-md-2">What we do</h5>
+              <h3 class="text-white">Why Choose Our Fresh Organic Foods</h3>
             </div>
-
-            <div class="col-md-6 w_heading mt-md-0 mt-2">
-              <p class="text text-white">
+            <div class="col-md-6 mt-md-0 mt-2">
+              <p class="text-white">
                 Sed ut perspiciatis unde omnis iste natus error sit accusantium
                 doloremque, eaque ipsa quae ab illo inventore.Sed ut
                 perspiciatis unde omnis iste natus error sit.
               </p>
             </div>
           </div>
-          <h4 class="bg_title">Services</h4>
+          <h4 class="faded-bg-content">Services</h4>
         </div>
-
-        <div class="row bellow justify-content-between">
-          <div class="col-lg-4 col-md-6 item">
+        <div class="service_content row justify-content-center">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
-              <div class="card-top p-0 position-relative border-0">
-                <a href="services">
-                  <img
-                    class="d-block img-responsive"
-                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/service1.jpg"
-                    alt="card-image"
-                  />
+              <div class="card-header p-0 position-relative border-0">
+                <a href="">
+                  <img class="w-100" src="/img/service1.jpg" alt="" />
                 </a>
               </div>
-              <div class="card-botom bellow-details">
-                <span class="label-style">Natural</span>
+              <div class="card-body service-details">
+                <div class="label-style">Natural</div>
 
-                <a href="services" class="service-heading"
-                  >Agriculture Products</a
-                >
+                <a href="" class="service-heading">Agriculture Products</a>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus sit accusantium
                   doloremque laudantium, totam rem aperiam
@@ -275,22 +253,17 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
-              <div class="card-top p-0 position-relative border-0">
-                <a href="services">
-                  <img
-                    class="d-block img-responsive"
-                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/service2.jpg"
-                    alt="card-image"
-                  />
+              <div class="card-header p-0 position-relative border-0">
+                <a href="">
+                  <img class="w-100" src="/img/service2.jpg" alt="" />
                 </a>
               </div>
-              <div class="card-botom">
-                <span class="label-style">Agriculture</span>
+              <div class="card-body service-details">
+                <div class="label-style">Natural</div>
 
-                <a href="services" class="service-heading">Fresh Vegetables</a>
+                <a href="" class="service-heading">Agriculture Products</a>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus sit accusantium
                   doloremque laudantium, totam rem aperiam
@@ -298,22 +271,17 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
-              <div class="card-top p-0 position-relative border-0">
-                <a href="services">
-                  <img
-                    class="d-block img-responsive"
-                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/service3.jpg"
-                    alt="card-image"
-                  />
+              <div class="card-header p-0 position-relative border-0">
+                <a href="">
+                  <img class="w-100" src="/img/service3.jpg" alt="" />
                 </a>
               </div>
-              <div class="card-botom">
-                <span class="label-style">Farm</span>
+              <div class="card-body service-details">
+                <div class="label-style">Natural</div>
 
-                <a href="services" class="service-heading">Organic Products</a>
+                <a href="" class="service-heading">Agriculture Products</a>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus sit accusantium
                   doloremque laudantium, totam rem aperiam
@@ -324,74 +292,59 @@
         </div>
       </div>
     </section>
-
-    <section id="res" class="quality py-5">
-      <div class="container py-md-5 py-4 home_page">
+    <section class="quality py-5">
+      <div class="container py-md-5 py-4">
         <div class="row">
-          <div class="col-lg-6 right_side info_align">
-            <h5 class="rigt-title">Why choose us</h5>
-            <h3 class="right-quality switchColor">
-              Quality food is the most important thing in our life
-            </h3>
+          <div class="quality_left col-lg-6">
+            <h5>Why choose us</h5>
+            <h3>Quality food is the most important thing in our life</h3>
             <p class="mt-3">
               Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
               ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
               amet consectetur adipisicing elit. Non quae, fugiat.
             </p>
-
-            <div class="row two_side mt-4 mt-sm-5 pt-lg-4">
-              <div class="first_side col-sm-6 d-flex">
+            <div class="row mt-sm-5 mt-4 pt-lg-4">
+              <div class="col-sm-6 quality_footer d-flex">
                 <span class="fa fa-users"></span>
-                <div class="details ml-2">
+                <div class="detail ml-2">
                   <h4>Qualified Staff</h4>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit.</p>
                 </div>
               </div>
-
-              <div class="second_side col-sm-6 d-flex mt-sm-0 mt-4">
+              <div class="col-sm-6 quality_footer d-flex mt-sm-0 mt-4">
                 <span class="fa fa-life-ring"></span>
-                <div class="details ml-2">
+                <div class="detail ml-2">
                   <h4>Excellent Service</h4>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit.</p>
                 </div>
               </div>
             </div>
           </div>
-
           <div
-            class="position-relative col-lg-5 offset-lg-1 offset-md-2 mt-lg-0 mt-sm-5 mt-4 right-img"
+            class="quality_right col-lg-5 offset-lg-1 offset-md-2 mt-lg-0 mt-sm-5 mt-4 position-relative"
           >
-            <img
-              src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/image.jpg"
-              alt=""
-              class="img-fluid radius-image"
-            />
-            <div class="age">
-              <h2 class="age_title">36+</h2>
+            <img src="/img/image.jpg" class="img-fluid" alt="" />
+            <div class="quality_img_info">
+              <h6>36+</h6>
               <p>YEARS OF EXPERIENCE</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section id="fes" class="features">
-      <div class="container advantges">
+    <section class="quality_under">
+      <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6 features15-col-text">
-            <a href="#url" class="d-flex ad_list">
+          <div class="quality_under_item col-lg-4 col-md-6">
+            <a href="#" class="item_content d-flex">
               <div class="col-3">
-                <div class="ad_info">
-                  <img
-                    class="img-fluid"
-                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/img5.png"
-                    alt=" "
-                  />
+                <div class="quality_under_icon">
+                  <img class="img-fluid" src="/img/img5.png" alt="" />
                 </div>
               </div>
               <div class="col-9">
-                <div class="right_text">
-                  <h3 class="switchColor">Agriculture</h3>
+                <div class="quality_under_detail">
+                  <h4>Agriculture</h4>
                   <p>
                     Ras effic itur metusga via suscipit consectetur adipisicing
                     unde omnis.
@@ -400,21 +353,16 @@
               </div>
             </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 features15-col-text">
-            <a href="#url" class="d-flex ad_list">
+          <div class="quality_under_item col-lg-4 col-md-6">
+            <a href="#" class="item_content d-flex">
               <div class="col-3">
-                <div class="ad_info">
-                  <img
-                    class="img-fluid"
-                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/img6.png"
-                    alt=" "
-                  />
+                <div class="quality_under_icon">
+                  <img class="img-fluid" src="/img/img6.png" alt="" />
                 </div>
               </div>
               <div class="col-9">
-                <div class="right_text">
-                  <h3 class="switchColor">Fresh</h3>
+                <div class="quality_under_detail">
+                  <h4>Agriculture</h4>
                   <p>
                     Ras effic itur metusga via suscipit consectetur adipisicing
                     unde omnis.
@@ -423,21 +371,16 @@
               </div>
             </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 features15-col-text">
-            <a href="#url" class="d-flex ad_list">
+          <div class="quality_under_item col-lg-4 col-md-6">
+            <a href="#" class="item_content d-flex">
               <div class="col-3">
-                <div class="ad_info">
-                  <img
-                    class="img-fluid"
-                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/img7.png"
-                    alt=" "
-                  />
+                <div class="quality_under_icon">
+                  <img class="img-fluid" src="/img/img7.png" alt="" />
                 </div>
               </div>
               <div class="col-9">
-                <div class="right_text">
-                  <h3 class="switchColor">Natural</h3>
+                <div class="quality_under_detail">
+                  <h4>Agriculture</h4>
                   <p>
                     Ras effic itur metusga via suscipit consectetur adipisicing
                     unde omnis.
@@ -446,21 +389,16 @@
               </div>
             </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 features15-col-text">
-            <a href="#url" class="d-flex ad_list">
+          <div class="quality_under_item col-lg-4 col-md-6">
+            <a href="#" class="item_content d-flex">
               <div class="col-3">
-                <div class="ad_info">
-                  <img
-                    class="img-fluid"
-                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/img8.png"
-                    alt=" "
-                  />
+                <div class="quality_under_icon">
+                  <img class="img-fluid" src="/img/img8.png" alt="" />
                 </div>
               </div>
               <div class="col-9">
-                <div class="right_text">
-                  <h3 class="switchColor">Farm</h3>
+                <div class="quality_under_detail">
+                  <h4>Agriculture</h4>
                   <p>
                     Ras effic itur metusga via suscipit consectetur adipisicing
                     unde omnis.
@@ -469,21 +407,16 @@
               </div>
             </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 features15-col-text">
-            <a href="#url" class="d-flex ad_list">
+          <div class="quality_under_item col-lg-4 col-md-6">
+            <a href="#" class="item_content d-flex">
               <div class="col-3">
-                <div class="ad_info">
-                  <img
-                    class="img-fluid"
-                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/img9.png"
-                    alt=" "
-                  />
+                <div class="quality_under_icon">
+                  <img class="img-fluid" src="/img/img9.png" alt="" />
                 </div>
               </div>
               <div class="col-9">
-                <div class="right_text">
-                  <h3 class="switchColor">Organic</h3>
+                <div class="quality_under_detail">
+                  <h4>Agriculture</h4>
                   <p>
                     Ras effic itur metusga via suscipit consectetur adipisicing
                     unde omnis.
@@ -492,21 +425,16 @@
               </div>
             </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 features15-col-text">
-            <a href="#url" class="d-flex ad_list">
+          <div class="quality_under_item col-lg-4 col-md-6">
+            <a href="#" class="item_content d-flex">
               <div class="col-3">
-                <div class="ad_info">
-                  <img
-                    class="img-fluid"
-                    src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/img10.png"
-                    alt=" "
-                  />
+                <div class="quality_under_icon">
+                  <img class="img-fluid" src="/img/img10.png" alt="" />
                 </div>
               </div>
               <div class="col-9">
-                <div class="right_text">
-                  <h3 class="switchColor">Dairy</h3>
+                <div class="quality_under_detail">
+                  <h4>Agriculture</h4>
                   <p>
                     Ras effic itur metusga via suscipit consectetur adipisicing
                     unde omnis.
@@ -518,224 +446,172 @@
         </div>
       </div>
     </section>
-
-    <section class="gallery py-5 mt-5">
-      <div class="container">
-        <div class="gallery__content" id="animated-thumbnails">
-          <div class="row">
-            <div class="col-xl-3">
-              <h5 class="small-title">Gallery</h5>
-              <h3 class="big-title">Our Products</h3>
-              <p class="">
+    <section class="gallery py-5">
+      <div class="container py-md-5 py-4">
+        <div class="gallery_content row">
+          <div class="gallery_item col-lg-3 col-6">
+            <div class="gallery_layer mt-sm-2">
+              <h5 class="small_title">Gallery</h5>
+              <h3>Our Products</h3>
+              <p class="mt-2">
                 Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.
               </p>
-              <a
-                href="#"
-                class="gallery__discover btn btn-primary btn-style mt-4"
-                >Discover more</a
+              <a href="#" class="btn btn-primary btn-style mt-4"
+                >Discovery More</a
               >
             </div>
-            <div class="col-xl-3">
-              <div class="gallery__item">
-                <a
-                  data-exthumbimage="./img/g2.jpg"
-                  data-lg-size="2500-2500"
-                  class="lightimg"
-                  data-src="./img/g2.jpg"
-                  data-sub-html="Design"
-                >
-                  <img src="./img/g2.jpg" alt="" />
-                </a>
-                <h5 class="gall-text">Fresh Carrots</h5>
-              </div>
-            </div>
-            <div class="col-xl-3">
-              <div class="gallery__item">
-                <a
-                  data-exthumbimage="./img/g3.jpg"
-                  data-lg-size="2500-2500"
-                  class="lightimg"
-                  data-src="./img/g3.jpg"
-                  data-sub-html="Design"
-                >
-                  <img src="./img/g3.jpg" alt="" />
-                </a>
-                <h5 class="gall-text">Strawberry</h5>
-              </div>
-            </div>
-            <div class="col-xl-3">
-              <div class="gallery__item">
-                <a
-                  data-exthumbimage="./img/g6.jpg"
-                  data-lg-size="2500-2500"
-                  class="lightimg"
-                  data-src="./img/g6.jpg"
-                  data-sub-html="Design"
-                >
-                  <img src="./img/g6.jpg" alt="" />
-                </a>
-                <h5 class="gall-text">Our Farm</h5>
+          </div>
+          <div class="gallery_item position-relative col-lg-3 col-6">
+            <div class="gallery_layer">
+              <div class="gallery_img position-relative">
+                <img src="/img/g2.jpg" class="" alt="" />
+                <h5>Fresh Carrot</h5>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-3">
-              <div class="gallery__item">
-                <a
-                  data-exthumbimage="./img/g5.jpg"
-                  data-lg-size="2500-2500"
-                  class="lightimg"
-                  data-src="./img/g5.jpg"
-                  data-sub-html="Design"
-                >
-                  <img src="./img/g5.jpg" alt="" />
-                </a>
-                <h5 class="gall-text">Fresh Apples</h5>
+          <div class="gallery_item position-relative col-lg-3 col-6">
+            <div class="gallery_layer">
+              <div class="gallery_img position-relative">
+                <img src="/img/g3.jpg" class="" alt="" />
+                <h5>Fresh Carrot</h5>
               </div>
             </div>
-            <div class="col-xl-3">
-              <div class="gallery__item">
-                <a
-                  data-exthumbimage="./img/g1.jpg"
-                  data-lg-size="2500-2500"
-                  class="lightimg"
-                  data-src="./img/g1.jpg"
-                  data-sub-html="Design"
-                >
-                  <img src="./img/g1.jpg" alt="" />
-                </a>
-                <h5 class="gall-text">Awesome Fields</h5>
+          </div>
+          <div class="gallery_item position-relative col-lg-3 col-6">
+            <div class="gallery_layer">
+              <div class="gallery_img position-relative">
+                <img src="/img/g6.jpg" class="" alt="" />
+                <h5>Fresh Carrot</h5>
               </div>
             </div>
-            <div class="col-xl-3">
-              <div class="gallery__item">
-                <a
-                  data-exthumbimage="./img/g7.jpg"
-                  data-lg-size="2500-2500"
-                  class="lightimg"
-                  data-src="./img/g7.jpg"
-                  data-sub-html="Design"
-                >
-                  <img src="./img/g7.jpg" alt="" />
-                </a>
-                <h5 class="gall-text">Fresh Grapes</h5>
+          </div>
+          <div class="gallery_item position-relative col-lg-3 col-6">
+            <div class="gallery_layer">
+              <div class="gallery_img position-relative">
+                <img src="/img/g5.jpg" class="" alt="" />
+                <h5>Fresh Carrot</h5>
               </div>
             </div>
-            <div class="col-xl-3">
-              <div class="gallery__item">
-                <a
-                  data-exthumbimage="./img/g8.jpg"
-                  data-lg-size="2500-2500"
-                  class="lightimg"
-                  data-src="./img/g8.jpg"
-                  data-sub-html="Design"
-                >
-                  <img src="./img/g8.jpg" alt="" />
-                </a>
-                <h5 class="gall-text">Hot Papper</h5>
+          </div>
+          <div class="gallery_item position-relative col-lg-3 col-6">
+            <div class="gallery_layer">
+              <div class="gallery_img position-relative">
+                <img src="/img/g1.jpg" class="" alt="" />
+                <h5>Fresh Carrot</h5>
+              </div>
+            </div>
+          </div>
+          <div class="gallery_item position-relative col-lg-3 col-6">
+            <div class="gallery_layer">
+              <div class="gallery_img position-relative">
+                <img src="/img/g7.jpg" class="" alt="" />
+                <h5>Fresh Carrot</h5>
+              </div>
+            </div>
+          </div>
+          <div class="gallery_item position-relative col-lg-3 col-6">
+            <div class="gallery_layer">
+              <div class="gallery_img position-relative">
+                <img src="/img/g8.jpg" class="" alt="" />
+                <h5>Fresh Carrot</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="carousel">
-      <div class="container">
-        <div class="owl-carousel owl-theme">
-          <div class="client__item">
-            <div class="client__content">
-              <div class="row">
-                <div class="col-3 client__info text-center">
-                  <a href="" class="client__img">
-                    <img src="./img/testi1.jpg" alt="" />
-                  </a>
-                  <div class="client__name text-white">
-                    <h3>Dennis wilson</h3>
-                    <p class="identity">Customer</p>
-                  </div>
-                </div>
-
-                <div class="col-9 client__quote">
-                  <i class="fa fa-quote-left"></i>
-                  <blockquote class="text-white">
-                    <q class="quote"
-                      >Lorem ipsum dolor sit amet int consectetur adipisicing
-                      elit. Velita beatae laudantium Quas minima sunt natus
-                      tempore, maiores aliquid modi felis sequi optio lacinia id
-                      ipsum non velit, culpa. voluptate rem ullam dolore nisi
-                      est quasi, doloribus tempora. est elit. Non quae, fugiat
-                      ad libero justo sed amet.</q
-                    >
-                  </blockquote>
+    <section class="client py-5">
+      <div class="client_content py-lg-5">
+        <div class="container py-md-5 py-4">
+          <div class="owl-carousel owl-theme">
+            <div class="client_item row align-items-center">
+              <div class="client_left col-md-3">
+                <a href="">
+                  <img
+                    src="/img/testi1.jpg"
+                    class="client_img img-fluid"
+                    alt=""
+                  />
+                </a>
+                <div class="client_title align-self-center">
+                  <h3 class="text-white">Dennis wilson</h3>
+                  <p class="text-white">Customer</p>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="client__item">
-            <div class="client__content">
-              <div class="row">
-                <div class="col-3 client__info text-center">
-                  <a href="" class="client__img">
-                    <img src="./img/testi2.jpg" alt="" />
-                  </a>
-                  <div class="client__name text-white">
-                    <h3>Dennis wilson</h3>
-                    <p class="identity">Customer</p>
-                  </div>
-                </div>
-
-                <div class="col-9 client__quote">
-                  <i class="fa fa-quote-left"></i>
-                  <blockquote class="text-white">
-                    <q class="quote"
-                      >Lorem ipsum dolor sit amet int consectetur adipisicing
-                      elit. Velita beatae laudantium Quas minima sunt natus
-                      tempore, maiores aliquid modi felis sequi optio lacinia id
-                      ipsum non velit, culpa. voluptate rem ullam dolore nisi
-                      est quasi, doloribus tempora. est elit. Non quae, fugiat
-                      ad libero justo sed amet.</q
-                    >
-                  </blockquote>
-                </div>
+              <div
+                class="client_right col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left"
+              >
+                <span class="fa fa-quote-left"></span>
+                <p>
+                  "Lorem ipsum dolor sit amet int consectetur adipisicing elit.
+                  Velita beatae laudantium Quas minima sunt natus tempore,
+                  maiores aliquid modi felis sequi optio lacinia id ipsum non
+                  velit, culpa. voluptate rem ullam dolore nisi est quasi,
+                  doloribus tempora. est elit. Non quae, fugiat ad libero justo
+                  sed amet."
+                </p>
               </div>
             </div>
-          </div>
-
-          <div class="client__item">
-            <div class="client__content">
-              <div class="row">
-                <div class="col-3 client__info text-center">
-                  <a href="" class="client__img">
-                    <img src="./img/testi3.jpg" alt="" />
-                  </a>
-                  <div class="client__name text-white">
-                    <h3>Dennis wilson</h3>
-                    <p class="identity">Customer</p>
-                  </div>
+            <div class="client_item row align-items-center">
+              <div class="client_left col-md-3">
+                <a href="">
+                  <img
+                    src="/img/testi2.jpg"
+                    class="client_img img-fluid"
+                    alt=""
+                  />
+                </a>
+                <div class="client_title align-self-center">
+                  <h3 class="text-white">Dennis wilson</h3>
+                  <p class="text-white">Customer</p>
                 </div>
-
-                <div class="col-9 client__quote">
-                  <i class="fa fa-quote-left"></i>
-                  <blockquote class="text-white">
-                    <q class="quote"
-                      >Lorem ipsum dolor sit amet int consectetur adipisicing
-                      elit. Velita beatae laudantium Quas minima sunt natus
-                      tempore, maiores aliquid modi felis sequi optio lacinia id
-                      ipsum non velit, culpa. voluptate rem ullam dolore nisi
-                      est quasi, doloribus tempora. est elit. Non quae, fugiat
-                      ad libero justo sed amet.</q
-                    >
-                  </blockquote>
+              </div>
+              <div
+                class="client_right col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left"
+              >
+                <span class="fa fa-quote-left"></span>
+                <p>
+                  "Lorem ipsum dolor sit amet int consectetur adipisicing elit.
+                  Velita beatae laudantium Quas minima sunt natus tempore,
+                  maiores aliquid modi felis sequi optio lacinia id ipsum non
+                  velit, culpa. voluptate rem ullam dolore nisi est quasi,
+                  doloribus tempora. est elit. Non quae, fugiat ad libero justo
+                  sed amet."
+                </p>
+              </div>
+            </div>
+            <div class="client_item row align-items-center">
+              <div class="client_left col-md-3">
+                <a href="">
+                  <img
+                    src="/img/testi3.jpg"
+                    class="client_img img-fluid"
+                    alt=""
+                  />
+                </a>
+                <div class="client_title align-self-center">
+                  <h3 class="text-white">Dennis wilson</h3>
+                  <p class="text-white">Customer</p>
                 </div>
+              </div>
+              <div
+                class="client_right col-md-9 pl-lg-5 mt-md-0 mt-4 text-md-left"
+              >
+                <span class="fa fa-quote-left"></span>
+                <p>
+                  "Lorem ipsum dolor sit amet int consectetur adipisicing elit.
+                  Velita beatae laudantium Quas minima sunt natus tempore,
+                  maiores aliquid modi felis sequi optio lacinia id ipsum non
+                  velit, culpa. voluptate rem ullam dolore nisi est quasi,
+                  doloribus tempora. est elit. Non quae, fugiat ad libero justo
+                  sed amet."
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <footer class="py-5">
       <div class="container py-4">
         <div class="row">
@@ -822,15 +698,8 @@
         </div>
       </div>
     </footer>
-
-    <a
-      href="#"
-      class="btt text-decoration-none cd-top text-replace js-cd-top cd-top--is-visible"
-    >
-      <i class="fa fa-level-up" aria-hidden="true"></i>
-    </a>
-
-    <!--jQuery 3.6-->
+    <!--jQuery 
+      .6-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -847,12 +716,7 @@
 
     <!-- Optional JavaScript -->
 
-    <!--Light/Dark Theme-->
-    <script>
-      document.getElementById("switchButton").onclick = function () {
-        document.getElementById("myBody").classList.toggle("dark");
-      };
-    </script>
+    <!--Fixed Header-->
     <script>
       $(window).on("scroll", function () {
         var scroll = $(window).scrollTop();
@@ -863,77 +727,33 @@
           $("#site-header").removeClass("nav-fixed");
         }
       });
-
-      //Main navigation Active Class Add Remove
-      $(".navbar-toggler").on("click", function () {
-        $("header").toggleClass("active");
-      });
-      $(document).on("ready", function () {
-        if ($(window).width() > 991) {
-          $("header").removeClass("active");
-        }
-        $(window).on("resize", function () {
-          if ($(window).width() > 991) {
-            $("header").removeClass("active");
-          }
-        });
-      });
     </script>
+    <!--Light/Dark Theme-->
 
     <!--Back to top-->
-    <script src="./back-to-top-master/assets/js/main.js"></script>
-    <script src="./back-to-top-master/assets/js/util.js"></script>
 
     <!-- lightGallery  -->
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/lightgallery.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/zoom/lg-zoom.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/fullscreen/lg-fullscreen.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/autoplay/lg-autoplay.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/share/lg-share.min.js"></script>
 
-    <script>
-      lightGallery(document.getElementById("animated-thumbnails"), {
-        selector: ".lightimg",
-        plugins: [lgZoom, lgThumbnail, lgAutoplay, lgFullscreen, lgShare],
-        alignThumbnails: "left",
-        loop: true,
-        allowMediaOverlap: true,
-        toggleThumb: true,
-        showZoomInOutIcons: true,
-        actualSize: false,
-        exThumbImage: "data-exthumbimage",
-      });
-    </script>
-
-    <!-- owlcarousel  -->
+    <!-- Owlcarousel  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <script>
-      $(function () {
-        // Owl Carousel
-        var owl = $(".owl-carousel");
-        owl.owlCarousel({
-          items: 1,
-          margin: 20,
-          loop: false,
-          responsiveClass: true,
-          autoplay: false,
-          autoplayTimeout: 5000,
-          autoplaySpeed: 1000,
-          autoplayHoverPause: false,
-          responsive: {
-            0: {
-              items: 1,
-              nav: false,
-            },
-            1000: {
-              items: 1,
-              nav: false,
-              loop: false,
-            },
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
           },
-        });
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
       });
     </script>
   </body>
