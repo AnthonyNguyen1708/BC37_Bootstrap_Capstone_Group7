@@ -31,6 +31,7 @@ h5 {
   background-color: white !important;
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
   height: 70px;
+  transition: 1s;
 }
 .nav-fixed h1 a {
   color: #000;
@@ -200,37 +201,11 @@ header nav h1:hover a {
 .feature-left a {
   margin-top: 3rem;
 }
-.feature-rigth-content {
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.feature-rigth-item {
-  text-align: center;
-  padding: 40px 30px;
-  border-radius: 30px;
-  box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
-  background-color: white;
-}
-.feature-rigth-item:hover {
-  transition: 0.3s;
-  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
-}
-.feature-rigth-item .icon img {
-  max-width: 65px;
+.feature-photo img {
+  max-width: 100%;
   display: block;
-  margin: 0 auto;
-}
-.feature-rigth-item h4 a {
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 600;
-  margin-top: 25px;
-  display: block;
-  color: black !important;
-}
-.feature-rigth-item h4 a {
-  text-decoration: none;
+  border-radius: 8px;
+  width: 100%;
 }
 /*end feature*/
 
@@ -983,3 +958,111 @@ footer h3 {
   box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
 /* end footer */
+
+/*start responsive*/
+/*mobile*/
+@media screen and (max-width: 576px) {
+  header {
+    height: auto;
+    padding: 17px 0;
+  }
+  .header_menu {
+    display: grid;
+    line-height: 30px;
+  }
+  .nav-fixed {
+    height: auto;
+    padding: 15px 0;
+    transition: 1s;
+  }
+  .nav-fixed .header_navbar .fa-search {
+    line-height: 40px;
+    transition: 1s;
+  }
+  .nav-fixed .header_menu .landing {
+    display: block !important;
+    font-size: 20px;
+    line-height: 40px;
+    transition: 1s;
+  }
+  .nav-fixed .header_menu a {
+    display: none;
+    transition: 1s;
+  }
+  .banner-left {
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 90%;
+    left: 5%;
+  }
+  .banner-left-content {
+    position: relative;
+  }
+  .farm-text {
+    position: absolute;
+    top: 0;
+  }
+  .banner-left-content h2 {
+    font-size: 80px;
+  }
+  .banner-detail h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .banner-detail p {
+    font-size: 17px;
+  }
+  .banner-detail {
+    margin-top: 13%;
+  }
+  .client_content .container .owl-carousel .client_item .client_right p {
+    font-size: 17px;
+  }
+  .client_content .container .owl-carousel .client_item .client_right span {
+    margin-left: 50%;
+  }
+  .owl-theme .owl-dots {
+    left: 45%;
+    bottom: -40px;
+  }
+  .last-item {
+    margin-top: 0px !important;
+  }
+}
+
+/*tablet*/
+@media screen and (max-width: 991px) {
+  header {
+    height: auto;
+    padding: 17px 0;
+  }
+  .header_menu {
+    display: grid;
+    line-height: 30px;
+  }
+  .nav-fixed {
+    height: auto;
+    padding: 15px 0;
+    transition: 1s;
+  }
+  .nav-fixed .header_navbar .fa-search {
+    line-height: 40px;
+    transition: 1s;
+  }
+  .nav-fixed .header_menu .landing {
+    display: block !important;
+    font-size: 20px;
+    line-height: 40px;
+    transition: 1s;
+  }
+  .nav-fixed .header_menu a {
+    display: none;
+    transition: 1s;
+  }
+  .last-item {
+    margin-top: 20px;
+  }
+}
