@@ -959,6 +959,34 @@ footer h3 {
 }
 /* end footer */
 
+/* back to top */
+.btt {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: fixed;
+  right: 15px;
+  bottom: 96px;
+  opacity: 0;
+  border-radius: 4px;
+  background-color: #009f4d;
+  color: #fff;
+  transition: all 0.5s;
+  z-index: 10;
+}
+.btt:hover {
+  opacity: 0.8;
+}
+.btt i {
+  font-size: 15px;
+  display: block;
+  margin: auto;
+  color: #fff;
+}
+.cd-top--is-visible {
+  opacity: 1;
+}
+
 /*start responsive*/
 /*mobile*/
 @media screen and (max-width: 576px) {
